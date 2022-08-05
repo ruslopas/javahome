@@ -10,6 +10,8 @@ public class Task5 {
 
     public static void main(String[] args) {
 
+
+
         System.out.print("Введите число от 0 до 59 ");
 
         Scanner scanner = new Scanner(System.in);
@@ -19,6 +21,7 @@ public class Task5 {
 
             scanner.nextInt();
         }
+
         int num = scanner.nextInt();
 
         defineQuarterOfHour(num);
@@ -26,6 +29,7 @@ public class Task5 {
     }
 
     public static void defineQuarterOfHour(int num) {
+
         if (num >= 0 && num <= 14) {
 
             System.out.println("Число " + num + " попадает в первую четверть часа.");
@@ -38,7 +42,14 @@ public class Task5 {
 
             System.out.println("Число " + num + " попадает в третью четверть часа.");
 
-        }else System.out.println("Число " + num + " попадает в четвертую четверть часа.");
+        }else if (num <0 || num > 59 ){
+
+            System.out.println("Число не входит в заданный диапазон");
+
+        }else{
+            System.out.println("Число " + num + " попадает в четвертую четверть часа.");
+
+        }
 
 
 

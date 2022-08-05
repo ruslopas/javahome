@@ -20,12 +20,12 @@ public class Task7 {
         System.out.print("Введите второе целое число : ");
         int b = scanner.nextInt();
 
-        verificationOfMultiplication(a, b);
+        verifyMultiplication(a, b);
 
     }
 
 
-    public static void verificationOfMultiplication(int a, int b) {
+    public static void verifyMultiplication(int a, int b) {
         System.out.print("Введите ответ " + a + " * " + b + " = ");
         Scanner scanner = new Scanner(System.in);
         int c = scanner.nextInt();

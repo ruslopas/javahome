@@ -23,7 +23,7 @@ public class Task6 {
     }
     public static void checkTriangle(float a, float b, float c) {
 
-        if (a + b >= c && b + c >= a && c + a >= b) {
+        if (a + b > c && b + c > a && c + a > b) {
 
             System.out.println("Такой треугольник существует");
 

@@ -35,11 +35,10 @@ public class Task3 {
                 System.out.println("Пятница");
                 break;
             case 6:
-                System.out.println("Выходные");
-                break;
             case 7:
-                System.out.println("Выходные");
+                System.out.println("Выходной");
                 break;
+
             default:
                 System.out.println("Ошибка!!! Вы ввели не то число");
                 break;
