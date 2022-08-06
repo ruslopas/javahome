@@ -26,7 +26,7 @@ public class Task2 {
 
 			scanner.next();
 
-			System.out.println("Error!!! Enter a number");
+			System.out.println("Error!!! Try again");
 
 		}
 
@@ -48,7 +48,7 @@ public class Task2 {
 
 	public static void multiplyOfDigits(int input) {
 
-		if (input == 0) {
+		if (input <= 0) {
 			int mult = 0;
 			System.out.println("Multiplication of digits of number " + input + " = " + mult);
 			
