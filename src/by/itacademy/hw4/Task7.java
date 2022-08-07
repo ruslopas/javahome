@@ -13,7 +13,7 @@ public class Task7 {
 		System.out.println("Created array");
 
 		for (int i = 0; i < arrayIndex; i++) {
-			myArray[i] = (int) (Math.random() * 100 + 1);
+			myArray[i] = (int) (Math.random() * 200 - 100);
 			System.out.print(" " + myArray[i]);
 		}
 		for (int i = 0; i < arrayIndex / 2; i++) {
