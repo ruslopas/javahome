@@ -1,5 +1,6 @@
 package by.itacademy.hw4;
 
+
 import java.util.Scanner;
 /*
         Создайте программу, вычисляющую факториал натурального числа n,
