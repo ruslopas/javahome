@@ -27,7 +27,9 @@ public class Task9 {
 
 	public static boolean validateEmail(String email) {
 
-		Pattern pattern = Pattern.compile("^([a-zA-Z0-9_.-]+@[a-zA-Z0-9_.-]+\\.[a-zA-Z0-9]{3,6})$");
+		Pattern pattern = Pattern
+				.compile("^(?=.+)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@(\\w*).((\\.[a-z]{2,6})|(\\.[a-z]{2,6}."
+						+ "\\.[a-z]{2,6}))$");
 		Matcher matcher = pattern.matcher(email);
 
 		return matcher.matches();
