@@ -43,7 +43,7 @@ public class Task3 {
 		words[indexMin] = max;
 
 		for (int i = 0; i < words.length; i++) {
-			swapLine.append(words[i] + " ");
+			swapLine.append(words[i]).append(" ");
 		}
 
 		return swapLine;
