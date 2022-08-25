@@ -27,12 +27,11 @@ public class GraduateStudent extends Student {
 	}
 
 	@Override
-
 	public int getScholarshipSum() {
 		if (getAverageRating() >= 5) {
 			return 200;
-		} else
-			return 180;
+		}
+		return 180;
 	}
 
 	public String getInfo() {

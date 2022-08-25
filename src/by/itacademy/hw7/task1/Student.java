@@ -67,8 +67,8 @@ public class Student {
 	public int getScholarshipSum() {
 		if (averageRating >= 5) {
 			return 100;
-		} else
-			return 80;
+		}
+		return 80;
 	}
 
 	public String getInfo() {
