@@ -1,12 +1,9 @@
 package by.itacademy.hw7.task1;
 
 public class GraduateStudent extends Student {
-	// Fields
 
-	private String scienсeWork = "Fine work in deffence.";
-
-	// Constructors
-
+	private String scienсeWork;
+	
 	public GraduateStudent(String name, String lastName, String groupName, int groupNumber, double averageRating) {
 		super(name, lastName, groupName, groupNumber, averageRating);
 

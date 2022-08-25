@@ -15,7 +15,7 @@ public class Main {
 
 		Student[] students = new Student[5];
 
-		students[0] = new GraduateStudent("Michael", "Jordan", "Bulls", 1, 5.5);
+		students[0] = new GraduateStudent("Michael", "Jordan", "Bulls", 1, 5.5,"Fine work in deffence.");
 		students[1] = new Student("Lebron", "James", "Lakers", 2, 4);
 		students[2] = new Student("Koby", "Bryant", "Lakers", 2, 5);
 		students[3] = new Student("Scotty", "Pippen", "Bulls", 1, 4);

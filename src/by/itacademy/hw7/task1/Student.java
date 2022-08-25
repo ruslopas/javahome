@@ -2,15 +2,11 @@ package by.itacademy.hw7.task1;
 
 public class Student {
 
-	// Fields
-
 	private String name;
 	private String lastName;
 	private String groupName;
 	private int groupNumber;
 	private double averageRating;
-
-	// Constructors
 
 	public Student(String name, String lastName, String groupName, int groupNumber, double averageRating) {
 		this.name = name;
@@ -19,8 +15,6 @@ public class Student {
 		this.groupNumber = groupNumber;
 		this.averageRating = averageRating;
 	}
-
-	// Methods
 
 	public String getName() {
 		return name;
