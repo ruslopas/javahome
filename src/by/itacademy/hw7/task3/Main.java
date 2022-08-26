@@ -16,7 +16,12 @@ public class Main {
 		Apricot apricot = new Apricot("Apricot", 1.25, 1.2);
 
 		Basket basket = new Basket(new Fruit[] { apple, pear, apricot });
-		basket.totalPrice();
+
+		System.out.println("Detailed report :\n");
+		basket.detailedPrice();
+
+		System.out.println("\nTotal price is : " + String.format("%.2f", basket.totalPrice()) + "$");
+
 	}
 
 }

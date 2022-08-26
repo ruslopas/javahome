@@ -24,18 +24,6 @@ public abstract class Fruit {
 		return fruitName;
 	}
 
-	public double setWeight() {
-		return this.weight;
-	}
-
-	public double setPrice() {
-		return this.price;
-	}
-
-	public String setFruitName() {
-		return this.fruitName;
-	}
-
 	public void printManufacturerInfo() {
 		System.out.println("Made in Belarus");
 	}

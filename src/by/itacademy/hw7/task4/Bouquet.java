@@ -9,25 +9,29 @@ public class Bouquet {
 
 	}
 
-	public void totalReport() {
-		double totalAmount = 0;
-		int totalLifeCycle = flowers[0].getLifeCycle();
+	public int getTotalReport() {
+		int totalAmount = 0;
+		for (int i = 0; i < flowers.length; i++) {
+			totalAmount += flowers[i].getAmount() * flowers[i].getPrice();
+		}
+		return totalAmount;
+	}
+
+	public StringBuilder getFlowerColors() {
+		StringBuilder colors = new StringBuilder(flowers[0].getColor());
+		for (int i = 1; i < flowers.length; i++) {
+			colors.append(" ").append(flowers[i].getColor()).append(" ");
+		}
+		return colors;
+	}
+
+	public int getLifeCycle() {
+		int totalLifeCycle = 0;
 		for (int i = 0; i < flowers.length; i++) {
 			if (totalLifeCycle < flowers[i].getLifeCycle()) {
 				totalLifeCycle = flowers[i].getLifeCycle();
 			}
-			totalAmount += flowers[i].getAmount() * flowers[i].getPrice();
-
 		}
-
-		StringBuilder colors = new StringBuilder(flowers[0].getColor());
-
-		for (int i = 1; i < flowers.length; i++) {
-			colors.append(" ").append(flowers[i].getColor()).append(" ");
-
-		}
-		System.out.println("Total amount of flowers : " + totalAmount + " $\n");
-		System.out.println("Total life lenght of the bouquet : " + totalLifeCycle + " days\n");
-		System.out.println("Colors of the bouquet : " + colors);
+		return totalLifeCycle;
 	}
 }

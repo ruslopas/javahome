@@ -18,7 +18,10 @@ public class Main {
 		Carnation carnation = new Carnation("red", 3, 1.5, 7);
 
 		Bouquet bouquet = new Bouquet(new Flower[] { rose, rose2, rose3, chamomile, carnation });
-		bouquet.totalReport();
+
+		System.out.println("Total amount of flowers : " + bouquet.getTotalReport() + " $\n");
+		System.out.println("Total life lenght of the bouquet : " + bouquet.getLifeCycle() + " days\n");
+		System.out.println("Colors of the bouquet : " + bouquet.getFlowerColors());
 	}
 
 }

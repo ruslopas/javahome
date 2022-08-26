@@ -8,14 +8,20 @@ public class Basket {
 		this.basket = basket;
 	}
 
-	public void totalPrice() {
-		double totalPrice = 0;
-		System.out.println("Detailed report :\n");
+	public double totalPrice() {
+		double basketPrice = 0;
+		for (Fruit fruit : basket) {
+			basketPrice = basketPrice + fruit.priceOfFruit();
+		}
+		return basketPrice;
+	}
+
+	public void detailedPrice() {
 		for (Fruit fruit : basket) {
 			System.out.println("Product : \"" + fruit.getFruitName() + "\", Weight : " + fruit.getWeight() + " kg"
 					+ ", Price : " + String.format("%.2f", fruit.priceOfFruit()) + "$");
-			totalPrice = totalPrice + fruit.priceOfFruit();
+
 		}
-		System.out.println("\nTotal price is : " + String.format("%.2f", totalPrice) + "$");
+
 	}
 }
