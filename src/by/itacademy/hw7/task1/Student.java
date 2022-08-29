@@ -38,26 +38,6 @@ public class Student {
 
 	}
 
-	public String setName() {
-		return this.name;
-	}
-
-	public String setLastName() {
-		return this.lastName;
-	}
-
-	public String setGroupName() {
-		return this.groupName;
-	}
-
-	public int setGroupNumber() {
-		return this.groupNumber;
-	}
-
-	public double setAverageRating() {
-		return averageRating;
-	}
-
 	public int getScholarshipSum() {
 		if (averageRating >= 5) {
 			return 100;

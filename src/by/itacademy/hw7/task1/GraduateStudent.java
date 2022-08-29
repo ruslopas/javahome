@@ -3,7 +3,7 @@ package by.itacademy.hw7.task1;
 public class GraduateStudent extends Student {
 
 	private String scienсeWork;
-	
+
 	public GraduateStudent(String name, String lastName, String groupName, int groupNumber, double averageRating) {
 		super(name, lastName, groupName, groupNumber, averageRating);
 
@@ -17,10 +17,6 @@ public class GraduateStudent extends Student {
 
 	public String getScienceWork() {
 		return scienсeWork;
-	}
-
-	public String setScienceWork() {
-		return this.scienсeWork;
 	}
 
 	@Override
