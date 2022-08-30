@@ -11,15 +11,15 @@ public class Basket {
 	public double totalPrice() {
 		double basketPrice = 0;
 		for (Fruit fruit : basket) {
-			basketPrice = basketPrice + fruit.priceOfFruit();
+			basketPrice += fruit.priceOfFruit();
 		}
 		return basketPrice;
 	}
 
 	public void detailedPrice() {
 		for (Fruit fruit : basket) {
-			System.out.println("Product : \"" + fruit.getFruitName() + "\", Weight : " + fruit.getWeight() + " kg"
-					+ ", Price : " + String.format("%.2f", fruit.priceOfFruit()) + "$");
+			System.out.printf("Product : \"%s\". Weight : %.2f kg. Price : %.2f $. \n", fruit.getFruitName(),
+					fruit.getWeight(), fruit.priceOfFruit());
 
 		}
 

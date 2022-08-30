@@ -20,7 +20,7 @@ public class Main {
 		System.out.println("Detailed report :\n");
 		basket.detailedPrice();
 
-		System.out.println("\nTotal price is : " + String.format("%.2f", basket.totalPrice()) + "$");
+		System.out.printf("\nTotal price is : %.2f $" , basket.totalPrice());
 
 	}
 

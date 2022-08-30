@@ -17,12 +17,14 @@ public class Bouquet {
 		return totalAmount;
 	}
 
-	public StringBuilder getFlowerColors() {
-		StringBuilder colors = new StringBuilder(flowers[0].getColor());
-		for (int i = 1; i < flowers.length; i++) {
+	public String getFlowerColors() {
+		StringBuilder colors = new StringBuilder("");
+		for (int i = 0; i < flowers.length; i++) {
 			colors.append(" ").append(flowers[i].getColor()).append(" ");
+
 		}
-		return colors;
+
+		return colors.toString();
 	}
 
 	public int getLifeCycle() {

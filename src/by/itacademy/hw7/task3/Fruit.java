@@ -28,5 +28,7 @@ public abstract class Fruit {
 		System.out.println("Made in Belarus");
 	}
 
-	public abstract double priceOfFruit();
+	public  double priceOfFruit() {
+		return 0;
+	}
 }

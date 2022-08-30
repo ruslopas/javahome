@@ -13,11 +13,11 @@ public class Main {
 		System.out.println("Enter temperature in Celsius degrees :");
 		double celsiusDegree = inputCelsiusDegree();
 
-		FahrenheitConvert convertion = new FahrenheitConvert(celsiusDegree);
-		System.out.println("Fahrenheit degrees : " + String.format("%.2f", convertion.convertFromCelsius()));
+		Converter FahrenheitConvert  = new FahrenheitConvert(celsiusDegree);
+		System.out.printf("Fahrenheit degrees : %.2fF\n", FahrenheitConvert.convertFromCelsius(celsiusDegree));
 
-		KelvinConvert convertion2 = new KelvinConvert(celsiusDegree);
-		System.out.println("Kelvin degrees : " + String.format("%.2f", convertion2.convertFromCelsius()));
+		Converter KelvinConvert  = new KelvinConvert(celsiusDegree);
+		System.out.printf("Kelvin degrees : %.2fK", KelvinConvert.convertFromCelsius(celsiusDegree));
 
 	}
 

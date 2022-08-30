@@ -2,14 +2,11 @@ package by.itacademy.hw7.task2;
 
 public class FahrenheitConvert implements Converter {
 
-	private double celsius;
-
-	public FahrenheitConvert(double celsius) {
-		this.celsius = celsius;
+	public FahrenheitConvert(double celsiusDegree) {
 	}
 
 	@Override
-	public double convertFromCelsius() {
-		return (celsius * 1.8 + 32);
+	public double convertFromCelsius(double celsiusDegree) {
+		return celsiusDegree * 1.8 + 32;
 	}
 }
