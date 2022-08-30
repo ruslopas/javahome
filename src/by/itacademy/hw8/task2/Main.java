@@ -8,9 +8,9 @@ public class Main {
 	 * таким-то логином и паролем отправил запрос.
 	 */
 	public static void main(String[] args) {
-		User vasya = new User("Vasya","12345");
-		vasya.new Query().printToLog();
-		
+
+		User vasya = new User("Vasya", "12345");
+		vasya.getQuery();
 
 	}
 

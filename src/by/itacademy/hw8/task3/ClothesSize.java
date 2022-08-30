@@ -5,7 +5,7 @@ public enum ClothesSize {
 
 	private String clothesSize;
 
-	ClothesSize(String clothesSize) {
+	private ClothesSize(String clothesSize) {
 		this.clothesSize = clothesSize;
 	}
 

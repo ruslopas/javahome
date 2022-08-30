@@ -1,7 +1,7 @@
 package by.itacademy.hw8.task2;
 
 public class User {
-	private String login;
+	private final String login;
 	private String password;
 
 	public User(String login, String password) {
@@ -9,9 +9,16 @@ public class User {
 		this.password = password;
 	}
 
-	class Query {
+	public void getQuery() {
+		Query newQuery = new Query();
+		newQuery.printToLog();
+
+	}
+
+	private class Query {
 		public void printToLog() {
-			System.out.println("User \"" + login + "\" with password \"" + password + "\" sent request");
+			System.out.printf("User \"%s\" with password \"%s\" sent request", login, password);
 		}
 	}
+
 }
