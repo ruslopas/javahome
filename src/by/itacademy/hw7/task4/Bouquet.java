@@ -18,13 +18,16 @@ public class Bouquet {
 	}
 
 	public String getFlowerColors() {
-		StringBuilder colors = new StringBuilder("");
+		String colors = " ";
 		for (int i = 0; i < flowers.length; i++) {
-			colors.append(" ").append(flowers[i].getColor()).append(" ");
+			if (!colors.contains(flowers[i].getColor())) {
+				colors = colors.concat(flowers[i].getColor()).concat(" ");
+
+			}
 
 		}
 
-		return colors.toString();
+		return colors;
 	}
 
 	public int getLifeCycle() {
