@@ -34,14 +34,14 @@ public class Main {
 
 	public static <T> Set<T> union(Set<T> set1, Set<T> set2) {
 
-		Set<T> unionSet = new HashSet<T>(set1);
+		Set<T> unionSet = new HashSet<>(set1);
 		unionSet.addAll(set2);
 		return unionSet;
 	}
 
 	public static <T> Set<T> intersect(Set<T> set1, Set<T> set2) {
 
-		Set<T> intersectSet = new HashSet<T>();
+		Set<T> intersectSet = new HashSet<>();
 		for (T element : set1) {
 			if (set2.contains(element)) {
 				intersectSet.add(element);

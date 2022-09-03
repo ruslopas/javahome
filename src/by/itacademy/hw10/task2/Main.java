@@ -22,7 +22,7 @@ public class Main {
 
 		String text = inputFromScanner();
 		String[] textArray = text.trim().replaceAll("[^0-9a-zA-Z']+", " ").toLowerCase().split(" ");
-		
+
 		Map<String, Integer> wordsCount = new HashMap<>();
 
 		for (String word : textArray) {
@@ -34,13 +34,8 @@ public class Main {
 				wordsCount.put(word, count + 1);
 			}
 		}
-
-		Iterator<Entry<String, Integer>> iter = wordsCount.entrySet().iterator();
-
-		System.out.println("Output: \n");
-		while (iter.hasNext()) {
-			Entry<String, Integer> entry = iter.next();
-			System.out.printf(" %s->%s\n",entry.getKey(), entry.getValue());
+		for (Entry<String, Integer> entry : wordsCount.entrySet()) {
+			System.out.printf(" %s->%s\n", entry.getKey(), entry.getValue());
 		}
 	}
 
