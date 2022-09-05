@@ -2,7 +2,7 @@ package by.itacademy.hw11.task1;
 
 public class Registration {
 
-	public boolean verify() {
+	public void verify() {
 
 		User user = null;
 
@@ -22,6 +22,6 @@ public class Registration {
 				System.out.println(e.getMessage());
 			}
 		}
-		return false;
+		
 	}
 }
