@@ -1,7 +1,9 @@
-package by.itacademy.hw11.task1;
+package by.itacademy.hw11.task1.datasource;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import by.itacademy.hw11.task1.entity.User;
 
 public class UserRepository {
 

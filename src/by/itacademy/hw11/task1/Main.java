@@ -2,6 +2,9 @@ package by.itacademy.hw11.task1;
 
 import java.util.Scanner;
 
+import by.itacademy.hw11.task1.service.Authorization;
+import by.itacademy.hw11.task1.service.Registration;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -29,8 +32,9 @@ public class Main {
 	    default:
 		break;
 	    }
-
+	
 	}
+
     }
 
 }

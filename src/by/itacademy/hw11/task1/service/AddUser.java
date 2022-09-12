@@ -1,4 +1,10 @@
-package by.itacademy.hw11.task1;
+package by.itacademy.hw11.task1.service;
+
+import by.itacademy.hw11.task1.datasource.UserRepository;
+import by.itacademy.hw11.task1.entity.User;
+import by.itacademy.hw11.task1.exception.UserNotExistException;
+import by.itacademy.hw11.task1.exception.WrongLoginException;
+import by.itacademy.hw11.task1.exception.WrongPasswordException;
 
 public class AddUser {
 

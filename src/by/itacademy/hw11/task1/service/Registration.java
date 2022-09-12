@@ -1,4 +1,8 @@
-package by.itacademy.hw11.task1;
+package by.itacademy.hw11.task1.service;
+
+import by.itacademy.hw11.task1.entity.User;
+import by.itacademy.hw11.task1.exception.WrongLoginException;
+import by.itacademy.hw11.task1.exception.WrongPasswordException;
 
 public class Registration {
 
@@ -7,7 +11,7 @@ public class Registration {
 	User user = null;
 
 	try {
-	    user = Validation.newUser();
+	    user = ValidationService.newUser();
 	} catch (WrongLoginException | WrongPasswordException e) {
 	    System.out.println(e.getMessage());
 

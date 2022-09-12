@@ -1,4 +1,4 @@
-package by.itacademy.hw11.task1;
+package by.itacademy.hw11.task1.entity;
 
 public class User {
 
