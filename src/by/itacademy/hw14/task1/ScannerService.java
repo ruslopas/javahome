@@ -21,7 +21,7 @@ public class ScannerService {
 
 	count = scanner.nextInt();
 
-	return count;
+	return Math.abs(count);
     }
 
     public static String getQuit() {
