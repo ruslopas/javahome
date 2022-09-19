@@ -20,7 +20,7 @@ public class Registration {
 	if (user != null) {
 
 	    try {
-		AddUser newUser = new AddUser();
+		UserService newUser = new UserService();
 		newUser.addUser(user);
 	    } catch (WrongLoginException e) {
 		System.out.println(e.getMessage());

@@ -6,7 +6,7 @@ import by.itacademy.hw11.task1.exception.UserNotExistException;
 import by.itacademy.hw11.task1.exception.WrongLoginException;
 import by.itacademy.hw11.task1.exception.WrongPasswordException;
 
-public class AddUser {
+public class UserService {
 
     final UserRepository users = UserRepository.getInstance();
 

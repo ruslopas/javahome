@@ -12,7 +12,7 @@ public class Authorization {
 	try {
 	    new ValidationService();
 	    User user = ValidationService.newUser();
-	    AddUser newUser = new AddUser();
+	    UserService newUser = new UserService();
 	    return newUser.checkUser(user);
 
 	} catch (WrongLoginException | WrongPasswordException | UserNotExistException e) {
