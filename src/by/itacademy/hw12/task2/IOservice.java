@@ -53,7 +53,7 @@ public class IOservice {
 	return count;
     }
 
-    public static void txtFileCreation() {
+    public static void createTxtFile() {
 
 	try (FileWriter fileCreation = new FileWriter("TextForTask2")) {
 

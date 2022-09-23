@@ -7,7 +7,7 @@ public class Main {
     public static void main(String args[]) {
 
 	System.out.println("Create text file for Task2");
-	IOservice.txtFileCreation();
+	IOservice.createTxtFile();
 
 	File file = new File("TextForTask2");
 	System.out.printf("File \"%s\" is available on path -> %s\n\n", file.getName(), file.getAbsolutePath());
