@@ -1,7 +1,6 @@
 package by.itacademy.hw10.task2;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
