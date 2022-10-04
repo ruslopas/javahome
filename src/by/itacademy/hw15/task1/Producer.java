@@ -1,7 +1,7 @@
 package by.itacademy.hw15.task1;
 
 class Producer implements Runnable {
-    Store store;
+    private Store store;
 
     Producer(Store store) {
 	this.store = store;
