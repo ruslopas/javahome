@@ -26,7 +26,7 @@ public class Main {
 	System.out.printf("\nСамая длинная строка : \" %s \"", colService.getMax(collection));
 
 	System.out.printf("\nКоличество совпадений со строкой \" login \" :  %s ",
-	                      colService.getEquals(collection));
+	                      colService.getEquals(collection,"login"));
 
 	System.out.println("\nСтроки-слова в коллекции : " 
 	                      + String.join(", ", colService.getStringWord(collection)));

@@ -8,12 +8,8 @@ import java.util.stream.Collectors;
 
 public class CollectionService {
 
-    public CollectionService() {
-
-    }
-
     public List<String> getCollection() {
-	
+
 	List<String> newArrayList = new ArrayList<>();
 
 	newArrayList.add("login");
@@ -24,40 +20,40 @@ public class CollectionService {
 	newArrayList.add("autodata");
 	newArrayList.add("Bosch ESItronic");
 	newArrayList.add("log");
-	
+
 	return newArrayList;
     }
-    
+
     public List<String> getSource(List<String> list) {
 	return list.stream()
-	           .collect(Collectors.toList());
+		   .collect(Collectors.toList());
     }
-    
+
     public String getMin(List<String> list) {
 	return list.stream()
 		   .min(Comparator.comparing(String::length))
 		   .get();
     }
 
-    public String getMax(List<String> list) {	
+    public String getMax(List<String> list) {
 	return list.stream()
-	           .max(Comparator.comparing(String::length))
-	           .get();
+		   .max(Comparator.comparing(String::length))
+		   .get();
     }
 
-    public long getEquals(List<String> list) {
+    public long getEquals(List<String> list,String word) {
 	return list.stream()
-	          .filter("login"::equals)
-	          .count();
+		   .filter(word::equals)
+		   .count();
     }
-    
+
     public List<String> getStringWord(List<String> list) {
 	return list.stream()
 		   .filter(a -> a.trim().matches("\\b\\w+\\b"))
 		   .collect(Collectors.toList());
-   }
-    
-    public List<String> getAllWords(List<String> list){
+    }
+
+    public List<String> getAllWords(List<String> list) {
 	return list.stream()
 		   .map(a -> a.split("\\W+"))
 		   .flatMap(words -> Arrays.stream(words))

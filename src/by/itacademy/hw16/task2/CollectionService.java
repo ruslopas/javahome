@@ -6,10 +6,6 @@ import java.util.Random;
 
 public class CollectionService {
 
-    public CollectionService() {
-
-    }
-
     public int getMax(List<Integer> list) {
 
 	return list.stream()
@@ -46,21 +42,21 @@ public class CollectionService {
 		   .average()
 		   .getAsDouble();
     }
-    
+
     public int getSumOfDigits(List<Integer> list) {
 	return list.stream()
-		   .mapToInt(a ->(getDigitsSum(a)))		
+		   .mapToInt(a -> (getDigitsSum(a)))
 		   .sum();
-	
+
     }
-    
+
     public int getDigitsSum(int a) {
-        return String.valueOf(a)
-	             .chars()
-	             .map(Character::getNumericValue)
-	             .sum();
+	return String.valueOf(a)
+		     .chars()
+		     .map(Character::getNumericValue)
+		     .sum();
     }
-    
+
     public List<Integer> getArrayList() {
 
 	List<Integer> intNumbers = new ArrayList<>();
