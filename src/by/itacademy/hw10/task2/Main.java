@@ -1,7 +1,6 @@
 package by.itacademy.hw10.task2;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
@@ -40,6 +39,7 @@ public class Main {
 	}
 
 	public static String inputFromScanner() {
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter text please:");
 

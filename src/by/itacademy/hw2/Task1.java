@@ -13,14 +13,14 @@ public class Task1 {
         double d = .00001234;
         boolean bool = true;
 
-        System.out.println("b = " + b);
-        System.out.println("s = " + s);
-        System.out.println("i = " + i);
-        System.out.println("l = " + l);
-        System.out.println("c = " + c);
-        System.out.println("f = " + f);
-        System.out.println("d = " + d);
-        System.out.println("bool = " + bool);
+        System.out.printf("b = %s\n", b);
+        System.out.printf("s = %s\n", s);
+        System.out.printf("i = %s\n", i);
+        System.out.printf("l = %s\n", l);
+        System.out.printf("c = %s\n", c);
+        System.out.printf("f = %s\n", f);
+        System.out.printf("d = %s\n", d);
+        System.out.printf("bool = %s\n", bool);
 
     }
 

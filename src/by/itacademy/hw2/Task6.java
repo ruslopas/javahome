@@ -8,17 +8,30 @@ public class Task6 {
 
 		double a, b, c;
 
-		System.out.println("Введите первое число");
-		Scanner scanner = new Scanner(System.in);
-		a = scanner.nextDouble();
+		System.out.println("Введите первое число");	
+		a = inputFromScanner();
 
 		System.out.println("Введите второе число");
-		b = scanner.nextDouble();
+		b = inputFromScanner();
 
 		System.out.println("Введите третье число");
-		c = scanner.nextDouble();
-		scanner.close();
+		c = inputFromScanner();
+		
+		findSmall(a, b, c);
+	
 
+	}
+	
+	public static double inputFromScanner() {
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		double a = scanner.nextDouble();
+		
+		return a;
+	}
+	
+	public static void findSmall(double a,double b,double c) {
+	    
 		if ((Math.abs(a)) < (Math.abs(b)) && (Math.abs(a)) < (Math.abs(c))) {
 			System.out.println("Меньшее по модулю число " + a);
 
@@ -29,6 +42,7 @@ public class Task6 {
 			System.out.println("Меньшее по модулю число " + c);
 
 		}
-
+	    
 	}
+	
 }

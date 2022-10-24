@@ -6,23 +6,28 @@ public class Task2 {
 
     public static void main(String[] args) {
 
-        int a, b, c;
+	int a, b, c;
 
-        System.out.println("Введите первое число (а)");
-        Scanner scanner = new Scanner(System.in);
-        a = scanner.nextInt();
+	System.out.print("Введите первое число (а) -> ");
+	a = inputFromScanner();
 
-        System.out.println("Введите второе число (b)");
-        b = scanner.nextInt();
-        scanner.close();
+	System.out.print("Введите второе число (b) -> ");
+	b = inputFromScanner();
 
-        c = sumAndMultiply(a, b);
-
-        System.out.println("(a + b) * (a * b) = " + c);
+	c = sumAndMultiply(a, b);
+	System.out.printf("\n(a + b) * (a * b) = %s\n", c);
     }
 
     public static int sumAndMultiply(int a, int b) {
 
-        return (a + b) + a * b;
+	return (a + b) + a * b;
+    }
+
+    public static int inputFromScanner() {
+	@SuppressWarnings("resource")
+	Scanner scanner = new Scanner(System.in);
+	int a = scanner.nextInt();
+	return a;
+
     }
 }
