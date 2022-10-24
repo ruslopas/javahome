@@ -26,8 +26,8 @@ public class Task2 {
     public static int inputFromScanner() {
 	@SuppressWarnings("resource")
 	Scanner scanner = new Scanner(System.in);
-	int a = scanner.nextInt();
-	return a;
+	
+	return scanner.nextInt();
 
     }
 }
