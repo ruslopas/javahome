@@ -8,7 +8,7 @@ import by.itacademy.hw20.task1.entity.Car;
 public class WaitingListRepo {
 
     private final Map<String, Car> waitingList = new HashMap<>();
-    private static volatile WaitingListRepo instance;
+    private static WaitingListRepo instance;
 
     public static WaitingListRepo getInstance() {
 	if (instance == null) {

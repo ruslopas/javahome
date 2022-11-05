@@ -8,7 +8,7 @@ import by.itacademy.hw20.task1.entity.Master;
 public class HRDepartmentRepo {
 
     private final Map<String, Master> masters = new HashMap<>();
-    private static volatile HRDepartmentRepo instance;
+    private static HRDepartmentRepo instance;
     
     private HRDepartmentRepo() {
 	
