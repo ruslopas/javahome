@@ -4,30 +4,34 @@ import java.util.Scanner;
 
 public class Task2 {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-	int a, b, c;
+		System.out.print("Введите первое число: ");
+		long firstNumber = inputFromScanner();
 
-	System.out.print("Введите первое число (а) -> ");
-	a = inputFromScanner();
+		System.out.print("Введите второе число: ");
+		long secondNumber = inputFromScanner();
 
-	System.out.print("Введите второе число (b) -> ");
-	b = inputFromScanner();
+		System.out.printf("\n(%s + %s) * (%s * %s) = %s\n", firstNumber, secondNumber, firstNumber, secondNumber,
+				sumAndMultiply(firstNumber, secondNumber));
+	}
 
-	c = sumAndMultiply(a, b);
-	System.out.printf("\n(a + b) * (a * b) = %s\n", c);
-    }
+	public static long sumAndMultiply(long firstNumber, long secondNumber) {
 
-    public static int sumAndMultiply(int a, int b) {
+		return (firstNumber + secondNumber) + firstNumber * secondNumber;
+	}
 
-	return (a + b) + a * b;
-    }
+	public static long inputFromScanner() {
+		
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		
+		while(!scanner.hasNextLong()) {
+			System.out.println("Необходимо ввести целое число.\nПовторите пожалуйста ввод...");
+			scanner.next();
+		}
 
-    public static int inputFromScanner() {
-	@SuppressWarnings("resource")
-	Scanner scanner = new Scanner(System.in);
-	
-	return scanner.nextInt();
+		return scanner.nextInt();
 
-    }
+	}
 }
