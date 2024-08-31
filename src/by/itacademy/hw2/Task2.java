@@ -16,12 +16,12 @@ public class Task2 {
 				sumAndMultiply(firstNumber, secondNumber));
 	}
 
-	public static long sumAndMultiply(long firstNumber, long secondNumber) {
+	private static long sumAndMultiply(long firstNumber, long secondNumber) {
 
 		return (firstNumber + secondNumber) + firstNumber * secondNumber;
 	}
 
-	public static long inputFromScanner() {
+	private static long inputFromScanner() {
 		
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
